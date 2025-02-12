@@ -9,4 +9,4 @@ function loader() {
         loader.style.top = "-100%"
     }, 4200)
 }
-loader();`̀~~~~
+loader(); 
