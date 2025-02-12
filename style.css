@@ -99,6 +99,9 @@ nav img{
     border-radius: 30px;
     /* padding: 3vw 2vw; */
 }
+#page1{
+    overflow: hidden;
+}
 #flare{
     height: 60vh;
     width: 60vh;
@@ -108,8 +111,9 @@ nav img{
     top: 75vh;
     right: 4vw;
     filter: blur(50px);
+    overflow-x: hidden;
     /*
-     z-index: ; */
+    z-index: ; */
     animation-name:chipuka;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -119,12 +123,14 @@ nav img{
 #flare2{
     height: 60vh;
     width: 60vh;
+    overflow-x: hidden;
     border-radius: 50%;
     background:linear-gradient(to top ,#eb4108 70%, #f46e00 30%) ;
     position: absolute;
     top: 70vh;
     right: -10vw;
     filter: blur(50px);
+    /* overflow: hidden; */
     /*
      z-index: ; */
     animation-name:chipukau;
@@ -137,7 +143,7 @@ nav img{
     min-height: 100vh;
     width: 100%;
     padding: 8vw 0;
-    position: absolute;
+    position: relative;
     background-color: #EFEAE3;
 }
 .con{
@@ -189,7 +195,7 @@ nav img{
     justify-content: space-between;
     align-items: center;
     /* gap: 20px; */
-    /* position: relative; */
+    position: relative ;
     
 }
 .page2-bottom h1{
@@ -213,23 +219,18 @@ nav img{
     font-size: 1vw;
     color: #3e3c38;
 }
-.page3{
-    min-height: 100vh;
-    width: 100%;
-
-}
 
 .flare{
-    height: 60vh;
-    width: 60vh;
+    height: 35vw;
+    width: 35vw;
     border-radius: 50%;
     background:radial-gradient(circle,#eb4108 60%, #f46e00 40%) ;
     position: absolute;
-    top: 70vh;
+    top: 30vh;
     right: 40vw;
     filter: blur(20px);
     /*
-     z-index: ; */
+    z-index: ; */
     animation-name:chipuk;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -267,6 +268,186 @@ nav img{
     to{
         filter: blur(65px);
         transform: translate(10%,-10% )skew(-5deg);
+    }
+    
+}
+.page3{
+    padding-top: 10vw;
+    min-height: 100vh;
+    width: 100%;
+    background-color:  #EFEAE3;
+}
+.elem{
+    height:8vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid rgb(93, 67, 54);
+    overflow: hidden;
+}
+.overlay{
+    height: 8vw;
+    width: 100%;
+    position: absolute;
+    background-color: #FF9831;
+    top: -8vw;
+    transition: all 0.3s ease-in-out;
+
+}
+.elem h2{
+    padding-left: 2vw;
+    font-size: 3vw;
+    z-index: 9;
+}
+.elem:hover .overlay{
+    top: 0;
+}
+.butt{
+    position: relative;
+    width: 100%;
+    /* height: 12vw; */
+    padding: 5vw 2vw;
+    display: flex;
+    align-items: center;
+    /* background-color: #eb4108; */
+}
+.navbutt h4{
+    padding: 13px 21px ;
+    border: 1px solid rgb(82, 63, 55);
+    border-radius: 50px;
+}
+.navbutt h4 a {
+    text-decoration: none;
+    color: #3e3c38;
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+.blackbox{
+    height: 90vh;
+    width: 90vw;
+    background-color: black;
+    margin: 0 auto;
+    /* padding: 0 5vw; */
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page4-img{
+    width: 50%;
+    height: 100%;
+    /* background-color: #9a7878; */
+    overflow: hidden;
+}
+.page4-img img{
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+    right: -5px;
+    object-fit:cover;
+    
+    /* display: none; */
+}
+.tabsec{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabsec .tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 1px solid rgb(176, 142, 142);
+}
+.tabs a{
+    text-decoration: none;
+    color: #8a7f79;
+    font-size: 8vh;
+    padding: 0 3vw;
+}
+
+.tabs a:hover {
+    color: #efeae3;
+}
+.tabs a:nth-child(1){
+    color: #efeae3;
+    padding:1vw;
+}
+
+.loader{
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    opacity: 1;
+    top: 0%;
+    /* transition: 0.5; */
+    animation: hatt;
+    animation-duration: 1s;
+    animation-delay:4s;
+    animation-timing-function: linear;
+    
+}
+.loader h1{
+    opacity: 0;
+    font-size: 5vw;
+    color: #eb4108;
+    position: absolute;
+    animation: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    
+
+}
+.loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+.loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+
+    }
+    90%{
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+@keyframes hatt {
+    0%{
+        top: 0%;
+        opacity: 1;
+    }
+    95%{
+        top: -95%;
+        opacity: 1;
+    }
+    100%{
+        top: -100%;
+        opacity: 0;
     }
     
 }
