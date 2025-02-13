@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sundown Studio</title>
     <link rel="icon" href="./assets/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="fixedImage">
+    </div>
     <div class="loader">
         <h1>ENVIRONMENTS</h1>
         <h1>CONTENT</h1>
@@ -79,32 +82,32 @@
             </div>
         </div>
         <div class="page3">
-            <div class="elem-container">
-                <div class="elem">
+            <div class="elem-cont">
+                <div class="elem" img-data="assets/elem/1.webp">
                     <div class="overlay"></div>
                     <h2>Play New Kidvision</h2>
                 </div>
-                <div class="elem">
+                <div class="elem" img-data="assets/elem/2.webp">
                     <div class="overlay"></div>
                     <h2>SOHO NYC</h2>
                 </div>
-                <div class="elem">
+                <div class="elem" img-data="assets/elem/3.webp">
                     <div class="overlay"></div>
                     <h2>Makers Studio HOI</h2>
                 </div>
-                <div class="elem">
+                <div class="elem" img-data="assets/elem/4.webp">
                     <div class="overlay"></div>
                     <h2>SOHO 2023</h2>
                 </div>
-                <div class="elem">
+                <div class="elem" img-data="assets/elem/5.webp">
                     <div class="overlay"></div>
                     <h2>NYFW Popup</h2>
                 </div>
-                <div class="elem">
+                <div class="elem" img-data="assets/elem/6.webp">
                     <div class="overlay"></div>
                     <h2>Air Force 1 2021</h2>
                 </div>
-                <div class="elem">
+                <div class="elem" img-data="assets/elem/7.webp">
                     <div class="overlay"></div>
                     <h2>50th Anniversary</h2>
                 </div>
@@ -121,18 +124,51 @@
             <div class="blackbox">
                     <div class="tabsec">
                         <div class="tabs">
-                            <a href="#">Design</a>
-                            <a href="#">Project</a>
-                            <a href="#">Execution</a>
+                            <a tabindex="1" img-data="assets/page4-1.webp">Design</a>
+                            <a tabindex="2" img-data="assets/page4-2.webp">Project</a>
+                            <a tabindex="3" img-data="assets/page4-3.webp">Execution</a>
                         </div>
                         <div class="discp">
                             <p>gvjgv</p>
                         </div>
                     </div>
                 <div class="page4-img">
-                    <img src="assets/page4-1.webp" >
+                    <img src="assets/page4-1.webp">
                 </div>
+
             </div>
+            <div id="sec2">
+                <div id="gol"></div>
+                <p>WHO WE WORK WITH</p>
+            </div>
+            <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-android swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-bddbc6d328726e86" aria-live="polite">
+                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6" style="margin-right: 50px;">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15ff_Nike.svg" alt="">
+                        <p>Retained Production support across retail and events in NY, CHI, LA. Creative Design, Design Management, Production/Project Management, and execution of work from concept to installation across the Country.</p>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6" style="margin-right: 50px;">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1600_Converse.svg" alt="">
+                        <p>Creative Concepting, Design, Design Management, Project Management, and execution of work from concept to installation across the Country. Cross functional communication and management of third party partners.</p>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="3 / 6" style="margin-right: 50px;">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fd_Arc%E2%80%99teryx.svg" alt="">
+                        <p>Production and design along with install oversight and execution support for the SoHo store opening on Broadway St, New York. Also working on creative and production work for a new store opening in Glendale, California.</p>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="4 / 6" style="margin-right: 50px;">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fe_Hunter.svg" alt="">
+                        <p>Design and Production partner for Hunter Holiday 2022 Pop-in at Nordstrom 57th St, New York, including activations in Women’s, Men’s and Kid’s zones. Thirty-five (35) additional smaller take-downs in Nordstrom stores across the US. Concept design for Holiday boot customization events in stores across winter 2022.</p>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="5 / 6" style="margin-right: 50px;">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1601_MediaLink.svg" alt="">
+                        <p>Creative, Design, and Production Partner for 2023 CES. Scope Included creation of Branding Identity, Assets, and Digital Content, Design, Production design, Production oversight and Installation of client activations for IBM, Delta, Instacart, and more.</p>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="6 / 6" style="margin-right: 50px;">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1602_AfterPay.svg" alt="">
+                        <p>Creative, Design, and Production Partner for 2022 NY Fashion Week Pop-Up space. In Partnership with B-Reel scope including creation of Final Design, Design Assets, 3D Renders, Production design, Production/Partner oversight and creation of a two (2) story pop-up for Afterpay’s clients such as Crocs, JD Sports, Container Store, &amp; Revolve.</p>
+                    </div>
+                </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
         </div>
     </div>
 
