@@ -43,10 +43,12 @@ allelem.forEach((e)=>{
 
 var tabs = document.querySelectorAll(".tabs a");
 var pg4img = document.querySelector(".page4-img img");
+// var dis  = document.querySelector("./descp")
 
 tabs.forEach((e) => {
     var img = e.getAttribute("img-data");
     var ind = e.getAttribute("tabindex");
+    // var d = e.getAttribute("des")
 
     e.addEventListener("click", () => {
         tabs.forEach(a => {
@@ -58,6 +60,9 @@ tabs.forEach((e) => {
 
         e.style.color = "#efeae3";
         e.style.padding = "0 1vw";
+        // dis.p = d
+
+
     });
 });
 

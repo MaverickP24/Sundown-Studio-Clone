@@ -358,9 +358,11 @@ nav img{
 .tabsec{
     height: 50%;
     width: 50%;
-    display: flex;
+    position: relative;
+    left: 10%;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 
 .tabsec .tabs{
@@ -372,7 +374,7 @@ nav img{
 .tabs a{
     text-decoration: none;
     color: #8a7f79;
-    font-size: 8vh;
+    font-size: 5vw;
     padding: 0 3vw;
 }
 
@@ -382,6 +384,10 @@ nav img{
 .tabs a:nth-child(1){
     color: #efeae3;
     padding:1vw;
+}
+.discp{
+    color: #EFEAE3;
+    margin: 0 auto;
 }
 
 .loader{
@@ -518,4 +524,64 @@ nav img{
 
 .swiper-slide {
     width: 20%;
+}
+
+.page5{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    /* background-color: #EFEAE3; */
+}
+.footer{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    position:fixed;
+    z-index: -1;
+    /* display: flex; */
+    /* align-items: flex-end; */
+}
+.footer h1{
+    position: absolute;
+    font-size: 22vw;
+    padding: 0 auto;
+    margin: 0 auto;
+    color: #EFEAE3;
+    bottom: 25%;
+    box-sizing: content-box;
+    border-bottom: 1px solid rgb(129, 104, 104);    
+
+}
+.footerlist{
+    position: absolute;
+    bottom: 20%;
+    left: -1%;
+    width: 100%;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+.footerlist h4{
+    color: #EFEAE3;
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+.footerlist a{
+    /* display: inline-block; */
+    color: #EFEAE3;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+div.footerlist a:hover{
+    color: rgb(136, 29, 136);
+    cursor: pointer;
+}
+#main{
+    height:900vh;
+    /* position: relative; */
+    
 }
