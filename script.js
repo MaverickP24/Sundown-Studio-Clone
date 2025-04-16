@@ -69,7 +69,7 @@ tabs.forEach((e) => {
 function swiperAnimation() {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
-        centeredSlides: true,
+        centeredSlides: false,
         spaceBetween: 100,
     });
 }
