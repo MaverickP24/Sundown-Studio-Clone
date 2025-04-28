@@ -32,8 +32,13 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 1vw;   
 }
+@media (max-width: 768px) {
+    .nav-part2 {
+      display: none;
+    }
+  }
 .nav-part2 h4{
     /* color: aliceblue; */
     padding: 10px 20px;
@@ -80,6 +85,11 @@ nav img{
     align-items: flex-end;
     margin-bottom:4vw ;
 }
+@media (max-width: 768px) {
+    .center {
+        height: 40vh;
+    }
+  }
 .left h3
 {
     width: 28vw;
