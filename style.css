@@ -290,7 +290,6 @@ nav img{
     height: 8vw;
     width: 100%;
     position: absolute;
-    background-color: #FF9831;
     top: -8vw;
     transition: all 0.3s ease-in-out;
 
@@ -465,7 +464,6 @@ nav img{
     z-index: 99;
     height: 30vw;
     width: 25vw;
-    background-color: #eb4108;
     top: 30%;
     right: 20%;
     border-radius: 30px;
